@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+  <definition name="welcome" template="/WEB-INF/views/template.jsp">
+      <put-attribute name="menu" value="/WEB-INF/views/menu.jsp"/>
+      <put-attribute name="body" value="/WEB-INF/views/welcome.jsp"/>
+  </definition>
+  <definition name="page1" extends="welcome">
+      <put-attribute name="body" value="/WEB-INF/views/page1.jsp"/>
+  </definition>
+  <definition name="page2" extends="welcome">
+      <put-attribute name="body" value="/WEB-INF/views/page2.jsp"/>
+  </definition>
+</tiles-definitions>
